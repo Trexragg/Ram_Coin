@@ -28,9 +28,9 @@ pipeline {
                 sshagent(credentials: ['cloudlab']) {
                     sh "sed -i 's/DOCKER_REGISTRY/${docker_user}/g' hasher.yaml"
                     sh "sed -i 's/BUILD_NUMBER/${BUILD_NUMBER}/g' hasher.yaml"
-                    sh 'scp -r -v -o StrictHostKeyChecking=no *.yaml lngo@130.127.132.246:~/'
-                    sh 'ssh -o StrictHostKeyChecking=no lngo@130.127.132.246 kubectl apply -f /users/lngo/hasher.yaml -n jenkins'
-                    sh 'ssh -o StrictHostKeyChecking=no lngo@130.127.132.246 kubectl apply -f /users/lngo/hasher-service.yaml -n jenkins'                                        
+                    sh 'scp -r -v -o StrictHostKeyChecking=no *.yaml tr950723@155.98.37.80:~/'
+                    sh 'ssh -o StrictHostKeyChecking=no tr950723@155.98.37.80 kubectl apply -f /users/tr950723/hasher.yaml -n jenkins'
+                    sh 'ssh -o StrictHostKeyChecking=no tr950723@155.98.37.80 kubectl apply -f /users/tr950723/hasher-service.yaml -n jenkins'                                        
                 }
             }
         }
