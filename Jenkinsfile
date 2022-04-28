@@ -1,7 +1,7 @@
 pipeline {
     agent none 
     environment {
-        docker_user = "linhbngo"
+        docker_user = "tr950723"
     }
     stages {
         stage('Publish') {
