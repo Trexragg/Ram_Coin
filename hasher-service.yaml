@@ -3,7 +3,7 @@ kind: Service
 metadata:  
   name: hasher 
 spec:
-  type: ClusterIP
+  type: HostIP
   ports:
     - port: 80
       protocol: TCP
