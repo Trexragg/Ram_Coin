@@ -10,13 +10,7 @@ pipeline {
                     inheritFrom 'agent-template'
                 }
             }
-            steps{
-                container('docker') {
-                    sh 'echo $DOCKER_TOKEN | docker login --username $DOCKER_USER --password-stdin'
-                    sh 'cd rng; docker build -t $DOCKER_USER/rng:$BUILD_NUMBER .'
-                    sh 'docker push $DOCKER_USER/rng:$BUILD_NUMBER'
-                }
-            }
+            
         }
         stage ('Deploy') {
             agent {
