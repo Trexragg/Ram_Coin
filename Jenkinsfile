@@ -1,4 +1,4 @@
-ipeline {
+pipeline {
     agent none 
     environment {
         docker_user = "linhbngo"
