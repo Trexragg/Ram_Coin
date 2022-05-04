@@ -8,10 +8,14 @@
     background-color: #eee;
     width: 800px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #tweet {
     color: royalblue;
+  
 }
+ 
 </style>
 <script src="jquery-1.11.3.min.js"></script>
 <script src="d3.min.js"></script>
@@ -85,6 +89,7 @@ function refresh () {
                 "font-size": "15px",
                 "font-weight": "normal",
                 "opacity": 0.5,
+               
             });
         }
     });
@@ -96,15 +101,19 @@ $(function () {
 </script>
 </head>
 <body>
-
-<h1>DockerCoin Miner WebUI</h1>
+<style>
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi8jpBhsGEJdwndKpD7fj-24lMS8tWn24Vog&usqp=CAU');
+}
+</style>
+<h1 style="text-align:center; color: purple">Ramcoin</h1>
 
 <div id="graph"></div>
 
 <h2>
   Current mining speed:
   <span id="speed">-</span>
-  <a id="tweet" href="#">(Tweet this!)</a>
+  <a id="tweet" href="https://twitter.com/i/flow/login">(Tweet this!)</a>
 </h2>
 
 </body>
