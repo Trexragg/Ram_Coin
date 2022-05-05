@@ -15,6 +15,21 @@
     color: royalblue;
   
 }
+
+  h1 {
+    background-color: White;
+    text-align: center;
+    opacity: 50%;
+    text-color: Black;
+
+  }
+  
+  h2 {
+    text-align: center;
+    background-color: White;
+    opacity: 75%;
+    
+  }
  
 </style>
 <script src="jquery-1.11.3.min.js"></script>
@@ -71,7 +86,7 @@ function refresh () {
                 preserve: true,
                 series: [
                     { name: "Coins",
-                      color: "steelblue",
+                      color: "purple",
                       data: points
                     }
                 ]
@@ -101,12 +116,13 @@ $(function () {
 </script>
 </head>
 <body>
+
 <style>
 body {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi8jpBhsGEJdwndKpD7fj-24lMS8tWn24Vog&usqp=CAU');
 }
 </style>
-<h1 style="text-align:center; color: purple">Ramcoin</h1>
+<h1>Ramcoin</h1>
 
 <div id="graph"></div>
 
